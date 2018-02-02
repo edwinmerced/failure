@@ -18,8 +18,43 @@
     
      <link href="animate.css" rel="stylesheet">
       
+<style>
+.jumbotron{
+  position: relative;
+  z-index:-2;
+}
+
+#video-background { 
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+  width:100%;
+}
+    
+    * {
+  border-radius: 0 !important;
+}
+    
+    .card-header{
+        
+        background-color: #6c757d;
+        border-bottom: 0px;
+    }
+    
+    
+    a:hover{
+    text-decoration: none;
+}
+    
+    h6{
+        margin-bottom: 0rem;
+    }
  
-      
+    </style>  
   </head>
 
   <body>
@@ -29,8 +64,59 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">Failure <strong style="color:#ef5e2f;">is</strong> an option</h4>
-              <p class="text-white">Failure is commonly known as lack of success, but any succesful entreprenuer will acknowledge the importance of failing. There are always postive lessons that can be learned from business ventures that have failed. Learning from one's failures, as well as the failures of others, can provide valuable insights for success. </p>
+                
+                
+                
+          
+                
+                <div id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="card">
+    <div class="card-header" role="tab" id="headingOne">
+      <h5 class="mb-0">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <h6 class="text-white">Failure <strong style="color:#ef5e2f;">is</strong> an option</h6>
+        </a>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+      <div class="card-block">
+        <p style="margin-left: 1em; margin-right: 1em; margin-top: 1em;">Failure is commonly known as lack of success, but any succesful entreprenuer will acknowledge the importance of failing. There are always postive lessons that can be learned from business ventures that have failed. Learning from one's failures, as well as the failures of others, can provide valuable insights for future success. </p>
+                <p style="margin-left: 1em; margin-right: 1em; margin-top: 1em;"> Three out of four start-ups fail (Gage, 2012). According to Patel (2015), 90% of start-ups fail. Failure percentage for start-ups is high; most start-ups fail (Henry, 2017). The reasons for start-up failures are multiple and varied. McCarthy (2017) identifies 20 reasons for start-up failures. Skok (n.d.) identifies 5 reasons for start-up failures.</p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab" id="headingTwo">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <h6 class="text-white">Bibliography</h6>
+        </a>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" class="collapse show"role="tabpanel" aria-labelledby="headingTwo">
+      <div class="card-block">
+          <p style="margin-left: 1em; margin-right: 1em; margin-top: 1em;">
+          <small >
+        <br>Gage, D. (2012). <em>The Venture Capital Secret: 3 Out of 4 Start-Ups Fail.</em> Retrieved from  <a href="https://www.wsj.com/articles/SB10000872396390443720204578004980476429190" target="_blank">https://www.wsj.com/articles/SB10000872396390443720204578004980476429190</a> <br><br>
+                
+                    Henry, P. (2017). <em>Why Some Startups Succeed (and Why Most Fail).</em> Retrieved from <a href="https://www.entrepreneur.com/article/288769" target="_blank">https://www.entrepreneur.com/article/288769</a><br><br>
+                    
+                      Mccarthy, (2017). <em>The Top Reasons Startups Fail [Infographic].</em> Retrieved from <a href="https://www.forbes.com/sites/niallmccarthy/2017/11/03/the-top-reasons-startups-fail-infographic/#1edde6c74b0d" target="_blank">https://www.forbes.com/sites/niallmccarthy/2017/11/03/the-top-reasons-startups-fail-infographic/#1edde6c74b0d</a><br><br>
+                    
+                Patel, N. (2015). <em>90% Of Startups Fail: Here's What You Need To Know About The 10%.</em> Retrieved from <a href="https://www.forbes.com/sites/neilpatel/2015/01/16/90-of-startups-will-fail-heres-what-you-need-to-know-about-the-10/#50b50e976679" target="_blank">https://www.forbes.com/sites/neilpatel/2015/01/16/90-of-startups-will-fail-heres-what-you-need-to-know-about-the-10/#50b50e976679</a><br><br>
+                    
+                  
+                    
+                    Skok, D. (n.d.). <em>5 Reasons Startups Fail.</em> <a href="http://www.forentrepreneurs.com/why-startups-fail/" target="_blank">http://www.forentrepreneurs.com/why-startups-fail/</a><br><br>
+              </small></p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+                
+              
             </div>
             <div class="col-sm-4 offset-md-1 py-4">
              <!-- <h4 class="text-white">Contact</h4>--><br><br>
@@ -58,10 +144,15 @@
     <main role="main">
 
       <section class="jumbotron text-center" class="animated bounce">
+          <video id="video-background" preload="" muted="" autoplay="" loop="">
+    <source src="artifacts/video.mp4" type="video/mp4">
+    <source src="artifacts/video.ogg" type="video/ogg">
+  </video>
+  <div class="container">
         <div class="container">
-          <h1 class="display-3">Failure <strong style="color:#ef5e2f;">is</strong> an option</h1>
-          <p class="lead text-muted">The six stories reported on this page are accounts of entrepreneurs that failed in their business ventures. They are meant to describe and not to blame nor scorn anyone, but to highlight and reflect on the importance of failure and to rescue the value of not being succcesful.</p>
-            <p class="lead text-muted">While you explore each story ask yourself:  <strong>What can I learn from this? What would I have done differently? What would I have done next?</strong></p>
+          <h1 class="display-3" style="color:#ffffff;">Failure <strong style="color:#ef5e2f;">is</strong> an option</h1>
+          <p  style="color:#ffffff;">The six stories reported on this page are accounts of entrepreneurs that failed in their business ventures. They are meant to describe and not to blame nor scorn anyone, but to highlight and reflect on the importance of failure and to rescue the value of not being succcesful.</p>
+            <p style="color:#ffffff;">While you explore each story ask yourself:  <strong>What can I learn from this? What would I have done differently? What would I have done next?</strong></p>
           
         </div>
       </section>
@@ -168,9 +259,9 @@
     <footer class="text-muted">
       <div class="container">
         <p class="float-right">
-            <small><a href="#">Back to top</a> </small>
+            <small ><a href="#" style=color:white;>Back to top</a> </small>
         </p>
-        <small>2018 &copy; Copyright Laureate Education, Inc. | All rights reserved.</small>
+        <small style=color:white;>2018 &copy; Copyright Laureate Education, Inc. | All rights reserved.</small>
         
       </div>
     </footer>
@@ -203,7 +294,7 @@ Your browser does not support the audio element.
           
       </div>
       <div class="modal-footer">
-       
+       <a href="artifacts/ProfileA.pdf" target="_blank" class="btn btn-secondary">Start-Up Profile</a>
           <a href="artifacts/A.pdf" target="_blank" class="btn btn-secondary">Transcript</a>
      
     
@@ -232,6 +323,7 @@ Your browser does not support the audio element.
           
       </div>
       <div class="modal-footer">
+          <a href="artifacts/ProfileB.pdf" target="_blank" class="btn btn-secondary">Start-Up Profile</a>
            <a href="artifacts/B.pdf" target="_blank" class="btn btn-secondary">Transcript</a>
             
          </div>
@@ -259,6 +351,7 @@ Your browser does not support the audio element.
           
       </div>
       <div class="modal-footer">
+          <a href="artifacts/ProfileC.pdf" target="_blank" class="btn btn-secondary">Start-Up Profile</a>
    <a href="artifacts/C.pdf" target="_blank" class="btn btn-secondary">Transcript</a>
          </div>
     </div>
@@ -277,14 +370,15 @@ Your browser does not support the audio element.
       </div>
       <div class="modal-body">
           
-        <audio controls style="width: 100%;">
-  <source src="artifacts/4.ogg" type="audio/ogg">
-  <source src="artifacts/4.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
+     <video width="100%" controls>
+  <source src="artifacts/video.mp4" type="video/mp4">
+  <source src="artifacts/videoD.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
           
       </div>
       <div class="modal-footer">
+          <a href="artifacts/ProfileD.pdf" target="_blank" class="btn btn-secondary">Start-Up Profile</a>
      <a href="artifacts/D.pdf" target="_blank" class="btn btn-secondary">Transcript</a>
          </div>
     </div>
@@ -304,14 +398,15 @@ Your browser does not support the audio element.
       </div>
       <div class="modal-body">
           
-        <audio controls style="width: 100%;">
-  <source src="artifacts/5.ogg" type="audio/ogg">
-  <source src="artifacts/5.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
+        <video width="100%" controls>
+  <source src="artifacts/video.mp4" type="video/mp4">
+  <source src="artifacts/video.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
           
       </div>
       <div class="modal-footer">
+          <a href="artifacts/ProfileE.pdf" target="_blank" class="btn btn-secondary">Start-Up Profile</a>
              <a href="artifacts/E.pdf" target="_blank" class="btn btn-secondary">Transcript</a>
          </div>
     </div>
@@ -330,14 +425,15 @@ Your browser does not support the audio element.
       </div>
       <div class="modal-body">
           
-        <audio controls style="width: 100%;">
-  <source src="artifacts/6.ogg" type="audio/ogg">
-  <source src="artifacts/6.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
+        <video width="100%" controls>
+  <source src="artifacts/video.mp4" type="video/mp4">
+  <source src="artifacts/video.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
           
       </div>
       <div class="modal-footer">
+          <a href="artifacts/ProfileF.pdf" target="_blank" class="btn btn-secondary">Start-Up Profile</a>
              <a href="artifacts/F.pdf" target="_blank" class="btn btn-secondary">Transcript</a>
         
          </div>
